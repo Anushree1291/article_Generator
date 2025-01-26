@@ -25,7 +25,7 @@ for name, model_path in model_names.items():
             loaded_models[name].resize_token_embeddings(len(tokenizer))
 
     tokenizers[name] = tokenizer
-print("a")
+
 def get_llm_response(llm_name, prompt, max_length=300):
     """Generate a response using the selected LLM."""
     model = loaded_models[llm_name]
